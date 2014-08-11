@@ -21,4 +21,4 @@ server.listen(process.env.PORT || 9804, function(){
   console.log("Server started @ ", process.env.PORT || 9804);
 });
 var manageUsers = require('./auth/manageUser')(server, db);
-var manageLists = require('./list/manageLists')(server,db);
+var manageLists = require('./list/manageList')(server,db);
